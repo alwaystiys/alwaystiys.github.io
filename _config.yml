@@ -17,3 +17,5 @@ github_username: alwaystiys # your Github username
 # Build settings
 permalink: none
 markdown: kramdown
+paginate: 2
+paginate_path: "page:num"
