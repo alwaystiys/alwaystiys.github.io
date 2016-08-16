@@ -1,40 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      
+
   {% include head.html %}
-
-  {% if site.google-analytics %}
-  {% include google-analytics.html %}
-  {% endif %}
-
-  {% if page.url == "/404.html" %}
-  <meta http-equiv="refresh" content="10; url={{ site.baseurl }}">
-  {% endif %}
-
-  </head>
 
   <body>
 
-  {% include header.html %}
+    {% include header.html %}
 
-  <header class="post-header">
-  <center><div class="contact-title">{{ page.title }}</div>
-    <div class="contact-subtitle"><p>{{ page.subtitle }}</p></div></center>
-  </header>
-
-
-  <div class="wrapper">
-        {{ content }}
-  </div>
-
-</body>
-
-<foot>
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="col-main">
+          {{ content }}
+        </div>
+        <div class="col-second">
+          {% include sidebar.html %}
+        </div>
+      </div>
+    </div>
 
     {% include footer.html %}
-    {% include foot.html %}
 
-</foot>
+  </body>
 
 </html>

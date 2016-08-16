@@ -1,21 +1,38 @@
 # Site settings
-title: Alwaystis Blog
-name: Alwaystis Blog # your name
-email: alwaystiys@163.com # your email address
+title: Alwaystiys Blog
+url: "http://alwaystiys.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
+baseurl: "" # the prefix of your site uri, eg. `/jekyll-theme-EasyBook` or just one slash `/`
+#timezone: Asia/Chongqing
 description: >
-    A Simple Jekyll Blog Theme. # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://alwaystiys.github.io" # the base hostname & protocol for your site
-#twitter_username: itisbenjamin1 # your Twitter username
-github_username: alwaystiys # your Github username
-#disqus_username: itisbenjamin # your disqus username
+  One or more sentences introducing this blog.
 
-#google-analytics: UA-75034651-1 # add it if you have one
+# Your information
+email: alwaystiys@163.com
+author: alwaystiys
+avatar:  /image/alwaystiys.jpg
+#avatar: "//www.gravatar.com/avatar/your_email_md5?d=mm&s=135"
+profile: Always Tanning In Your Sunry.
+#twitter_username: twitter_username
+#github_username:  github_username
 
-#skillstree: true # turn on or off the skills tree in about page
+# Comment Service (Disqus or 多说)
+#  choose one and un-comment the line to active it
+#disqus_shortname: xxx   # get one: https://disqus.com/admin/signup/
+#duoshuo_shortname: xxx  # get one: http://duoshuo.com/create-site/
+
+permalink: /archivers/:title
+gems:
+ - jekyll-paginate
+ - jekyll-gist
+ - jemoji
 
 # Build settings
-permalink: none
-markdown: kramdown
-paginate: 2
+paginate: 5
 paginate_path: "page:num"
+
+highlighter: rouge
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
