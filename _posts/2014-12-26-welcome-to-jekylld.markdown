@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll and EasyBookd"
 date:   2014-12-26 09:00:13
-categories: jekyll update
+categories: jekyll 
 permalink: /archivers/hello
 ---
 
