@@ -5,8 +5,8 @@ author: XiaoBin XIE
 email: alwaystiys@163.com
 description: "alwaystiys is a Jekyll blog theme." # You can edit this line in _config.yml. It will appear in your document head meta and in your feed.xml site description
 keywords: "Program, Music, alwaystiys"
-baseurl: "/blog" # the subpath of your site, e.g. /blog/
-url: "https://alwaystiys.github.io/blog" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://alwaystiys.github.io" # the base hostname & protocol for your site
 # locale: en_US
 locale: zh_CN
 
