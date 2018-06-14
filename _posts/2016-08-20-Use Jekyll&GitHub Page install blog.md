@@ -15,52 +15,51 @@ tags:
 后来发现还是官网的比较靠谱，所以大部分参照官网的教程搭建，
 一路还算顺利，下面就记录下整个过程。 
 
-## 前言 ##
+#### 前言
 下面简单扫盲下会用到的相关工具概念，具体的知识还得自己搜索下。
 
-### [Git](https://git-scm.com/) ###
+##### [Git](https://git-scm.com/)
 简单的说 Git是一种版本控制系统。跟svn、cvs是同级的概念
 
-### [GitHub](https://github.com/)  ###
+##### [GitHub](https://github.com/) 
 GitHub是一个网站，给用户提供Git服务。这样你就不用自己部署git系统，直接用注册个账号，用他们提供的git服务就可以。
 Github是一个开源代码库及版本控制系统，它可以托管各种git库，号称程序员的Facebook，影响力非常大。
 
-### [GitHub Page](https://pages.github.com/) ###
+##### [GitHub Page](https://pages.github.com/)
 Github里的Pages功能，就是用来为项目建立网站，使项目的展示能够简明易懂。我们就可以通过它来建立托管在Github上的静态网页。
 Github Pages分为用户、组织、项目三种网站，我们的Blog要用到的是 User Pages site ，即用户网站。
 
-### [Jekyll](http://jekyll.bootcss.com/) ### 
+##### [Jekyll](http://jekyll.bootcss.com/) 
 Jekyll是一个简单免费的静态站点生成器，它根据网页源码生成静态文件，并且为我们提供了模板、插件。最关键的是可以免费部署在Github上。
 
-### 相关语言 ###
+##### 相关语言
 * ruby
 * markdown
 
-### 为什么会使用GitHub Page和jekyll搭建个人博客 ###
+#### 为什么会使用GitHub Page和jekyll搭建个人博客 
 * 这二者都是开源免费的，可以自由定制网站风格
 * Github给你提供了无限流量，世界各地访问速度都很理想，延迟基本在200ms以内
 * 不管何时何地只要提交commit就能发布新文章，让博主专注于写文章
 * 不需要数据库，通过markdown编写静态文章生成HTML页面，提升页面响应速度
 * 享受git的版本管理功能，不用担心有文章丢失
 
-## 环境搭建 ##
+#### 环境搭建
 
 注：本文主要介绍windows环境下的安装。
 
 
-### 注册Github ###
+##### 注册Github 
 到[GitHub](https://github.com/)的官方网站，注册账户。
 记住自己的用户名，后面会常用到。
 
 
-### 安装Git ###
+##### 安装Git
 
 安装[git for windows](https://git-for-windows.github.io/) 
 安装后如果右键菜单出现如下选项就已经成功了。
 [gitinstall.png](https://postimg.cc/image/wjlamo1b1/)
 
-
-### 创建自己的GitHub Page ###
+##### 创建自己的GitHub Page
 以下参照了[GitHub Page官网的GitBub Page配置指南](https://pages.github.com/)，如果安装有问题可以查看原文。
 创建自己的GitHub Page有三种类型：个人、组织或项目，下面只说明个人的方式：
 
@@ -89,7 +88,7 @@ git add --all
 8、打开网址后，你应该可以看到Hello World。个人GitBub Page就已经配置完毕了。接下来我们将配置本地Jekyll，配置成功后，本地可以执行测试，
 如果将Jekyll生成的网址上传到GitHub，那么访问你的GItHub Page就可以看得到个人创建的博客了。
 
-### 安装Jekyll本地编译环境 ###
+##### 安装Jekyll本地编译环境
 下文假定了你已经会用一些基本Git操作，如果暂时不熟悉可以了解下基本语法。
 以下参照了[GitHub Page官网的安装指南](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/#step-2-install-jekyll-using-bundler)，
 如果安装有问题可以查看原文。
