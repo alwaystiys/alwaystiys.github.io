@@ -29,11 +29,21 @@ layout: default
       </p>
     </header>
 
-    <article class="post-content" itemprop="articleBody">
-      {{ post.content }}
-    </article> <hr />
+    <div class="post-content">
+      {{ post.excerpt }}
+    </div>
+    <p>
+      <a class="post-link2" href="{{ post.url | prepend: site.baseurl }}">
+        &raquo;&raquo; Read More &raquo;&raquo;
+      </a>
+    </p>
+    <hr />
     
     {% endfor %}
   
   </div>
 </div>
+<!-- 
+    <article class="post-content" itemprop="articleBody">
+      {{ post.content }}
+    </article> <hr /> -->
