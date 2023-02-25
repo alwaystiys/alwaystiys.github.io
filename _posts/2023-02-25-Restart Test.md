@@ -3,7 +3,7 @@ published: true
 title: Restart Test
 layout: post
 author: alwaystiys 
-category: Game
+category: Self
 tags:
 - Self
 ---
